@@ -158,12 +158,17 @@ export default function HomePages() {
           <h1 className="font-bold text-[#fff] bg-[#040404] p-[8px] text-center">
             Willkommen🖐 {session.user.name}
             <span
-              className={` py-[7px] px-[13px]  ${
-                session.user.clickCount === "3" ? "bg-red-500" : "bg-[#519cdd]"
+              className={`py-[7px] px-[13px] ${
+                session.user.clickCount >= 3 ? "bg-red-500" : "bg-[#519cdd]"
               } text-[15px] rounded-[10px] m-[16px]`}
             >
               {session.user.clickCount}
             </span>
+            {session.user.clickCount >= 3 && (
+              <div className="text-red-500 py-[7px] px-[13px] rounded-[10px]">
+                Your account will be deleted
+              </div>
+            )}
           </h1>
         </div>
         <h1 className="text-center m-auto bg-[#080f26] text-[#fff] font-bold p-5 rounded-2xl  mt-[50px]">
