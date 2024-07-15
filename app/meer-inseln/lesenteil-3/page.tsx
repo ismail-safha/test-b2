@@ -166,7 +166,7 @@ pageFive="/meer-inseln/sprachbauchteine-2"
                 </button>
                 <button
                   onClick={shuffleAnswers}
-                  className="bg-[#c37e2fc7] block lg:hidden hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
+                  className="bg-[#c37e2fc7]  hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
                 >
                   Shuffle 🔄
                 </button>

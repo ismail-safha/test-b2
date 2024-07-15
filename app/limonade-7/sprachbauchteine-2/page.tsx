@@ -110,7 +110,7 @@ const Sprachbauchteine_2: React.FC = () => {
   return (
     session && (
       <div className="container m-auto  w-full px-2">
-         <Header
+        <Header
           pageHome="/limonade-7"
           pageTow="/limonade-7/lesenteil-2"
           pageThree="/limonade-7/lesenteil-3"
@@ -132,7 +132,7 @@ const Sprachbauchteine_2: React.FC = () => {
               </p>
               <div className="mt-[30px] dark:bg-[#1d2a35] dark:text-[#ededed] bg-[#fbfbfb] rounded-lg lg:overflow-y-scroll h-fit  lg:h-[500px] p-4">
                 <h1 className="text-xl font-bold">
-                Das Fahrrad: ernsthafte Konkurrenz fürs Auto?
+                  Das Fahrrad: ernsthafte Konkurrenz fürs Auto?
                 </h1>
                 <p>
                   Welches Fortbewegungsmittel, denken Sie, wird in Deutschland
@@ -347,7 +347,7 @@ const Sprachbauchteine_2: React.FC = () => {
                 </button>
                 <button
                   onClick={shuffleAnswers}
-                  className="bg-[#c37e2fc7] block lg:hidden hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
+                  className="bg-[#c37e2fc7]  hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
                 >
                   Shuffle 🔄
                 </button>

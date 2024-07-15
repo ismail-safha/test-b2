@@ -104,12 +104,12 @@ const LesenTeil: React.FC = () => {
   return session ? (
     <div className="container m-auto  w-full px-2">
       <Header
-          pageHome="/sport-ist-gesund-1-1"
-          pageTow="/sport-ist-gesund-1-1/lesenteil-2"
-          pageThree="/sport-ist-gesund-1-1/lesenteil-3"
-          pageFour="/sport-ist-gesund-1-1/sprachbauchteine-1"
-          pageFive="/sport-ist-gesund-1-1/sprachbauchteine-2"
-        />
+        pageHome="/sport-ist-gesund-1-1"
+        pageTow="/sport-ist-gesund-1-1/lesenteil-2"
+        pageThree="/sport-ist-gesund-1-1/lesenteil-3"
+        pageFour="/sport-ist-gesund-1-1/sprachbauchteine-1"
+        pageFive="/sport-ist-gesund-1-1/sprachbauchteine-2"
+      />
 
       <main>
         <div className="w-full bg-blue-900 text-white">
@@ -157,7 +157,7 @@ const LesenTeil: React.FC = () => {
               </button>
               <button
                 onClick={shuffleAnswers}
-                className="bg-[#c37e2fc7] block lg:hidden hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
+                className="bg-[#c37e2fc7]  hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
               >
                 Shuffle 🔄
               </button>

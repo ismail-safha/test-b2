@@ -16,13 +16,11 @@ const shuffleArray = (array: any[]) => {
 };
 
 const LesenTeil: React.FC = () => {
-
   const [cartItems, setCartItems] = useState(lesenTeil_1.carts);
   const [checkResult, setCheckResult] = useState<(boolean | undefined)[]>([]);
   const [selectedCartId, setSelectedCartId] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [resetActiveState, setResetActiveState] = useState(false);
-
 
   const { data: session, status } = useSession();
   if (status === "loading") {
@@ -163,7 +161,7 @@ const LesenTeil: React.FC = () => {
               </button>
               <button
                 onClick={shuffleAnswers}
-                className="bg-[#c37e2fc7] block lg:hidden hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
+                className="bg-[#c37e2fc7]  hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
               >
                 Shuffle 🔄
               </button>

@@ -347,11 +347,11 @@ const Sprachbauchteine_2: React.FC = () => {
                   Check Answers
                 </button>
                 <button
-                  onClick={shuffleAnswers}
-                  className="bg-[#c37e2fc7] block lg:hidden hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
-                >
-                  Shuffle 🔄
-                </button>
+                onClick={shuffleAnswers}
+                className="bg-[#c37e2fc7]  hover:bg-yellow-400 text-white font-bold py-2 px-4 rounded mt-4"
+              >
+                Shuffle 🔄
+              </button>
                 <button
                   className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded mt-4 ml-2"
                   onClick={resetCheckResult}
