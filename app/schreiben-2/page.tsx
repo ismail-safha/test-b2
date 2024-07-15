@@ -3,13 +3,15 @@
 import Image from "next/image";
 import HeaderSchreben from "../components/HeaderSchreben";
 import imgschreiben from "../../public/img/schreiben-2.jpg";
-import { useState } from "react";
+import { SetStateAction, useState } from "react";
 
 const Schreiben_1 = () => {
   const [textareaValue, setTextareaValue] = useState("");
 
   // Function to handle textarea change
-  const handleTextareaChange = (event) => {
+  const handleTextareaChange = (event: {
+    target: { value: SetStateAction<string> };
+  }) => {
     setTextareaValue(event.target.value);
   };
 
