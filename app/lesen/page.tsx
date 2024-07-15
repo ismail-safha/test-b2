@@ -3,6 +3,7 @@ import { useSession } from "next-auth/react";
 import React, { useEffect, useState } from "react";
 import AnswerItems from "../components/lesen/AnswerItems";
 import CartDroppable from "../components/lesen/CartDroppable";
+import StatusLoading from "../components/StatusLoading";
 
 import Image from "next/image";
 
@@ -15,13 +16,16 @@ const shuffleArray = (array: any[]) => {
 };
 
 const LesenTeil: React.FC = () => {
-  const { data: session } = useSession();
   const [cartItems, setCartItems] = useState(lesenTeil_1.carts);
   const [checkResult, setCheckResult] = useState<(boolean | undefined)[]>([]);
   const [selectedCartId, setSelectedCartId] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [resetActiveState, setResetActiveState] = useState(false);
 
+  const { data: session, status } = useSession();
+  if (status === "loading") {
+    return <StatusLoading />;
+  }
   //====
 
   const [answers, setAnswers] = useState(lesenTeil_1.answers);

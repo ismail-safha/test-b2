@@ -41,7 +41,7 @@ export const authOptions: NextAuthOptions = {
           name: existingUser.name,
           email: existingUser.email,
           role: existingUser.role,
-          // clickCount: existingUser.clickCount,
+          clickCount: existingUser.clickCount,
         };
       },
     }),
@@ -60,7 +60,7 @@ export const authOptions: NextAuthOptions = {
         session.user.id = token.id;
         session.user.name = token.name;
         session.user.email = token.email;
-        // session.user.clickCount = token.clickCount;
+        session.user.clickCount = token.clickCount;
         session.user.role = token.role;
         session.user.image = token.picture;
       }
@@ -81,7 +81,7 @@ export const authOptions: NextAuthOptions = {
         name: dbUser.name,
         email: dbUser.email,
         picture: dbUser.image,
-        // clickCount: dbUser.clickCount,
+        clickCount: dbUser.clickCount,
         role: dbUser.role,
       };
     },

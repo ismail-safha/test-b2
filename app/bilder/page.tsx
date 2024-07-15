@@ -9,18 +9,23 @@ import Image from "next/image";
 import Header from "../components/Header";
 import { lesenTeil_1 } from "../data/Insekten_H/bilderData";
 import GetStarted from "../components/GetStarted";
+import StatusLoading from "../components/StatusLoading";
 
 const shuffleArray = (array: any[]) => {
   return array.sort(() => Math.random() - 0.5);
 };
 
 const LesenTeil: React.FC = () => {
-  const { data: session } = useSession();
   const [cartItems, setCartItems] = useState(lesenTeil_1.carts);
   const [checkResult, setCheckResult] = useState<(boolean | undefined)[]>([]);
   const [selectedCartId, setSelectedCartId] = useState<number | null>(null);
   const [isVisible, setIsVisible] = useState(false);
   const [resetActiveState, setResetActiveState] = useState(false);
+
+  const { data: session, status } = useSession();
+  if (status === "loading") {
+    return <StatusLoading />;
+  }
 
   //====
 

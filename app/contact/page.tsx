@@ -15,8 +15,8 @@ const Contact = () => {
             }}
             className="flex flex-col items-center bg-red-800 p-1 ml-1"
           >
-            <div className="text-white font-black text-[25px] lg:text-[40px]">
-              t-elc
+            <div className="text-white font-black text-[30px] lg:text-[35px]">
+              TEST
             </div>
             <div className="text-white text-[10px] lg:text-[12px]">
               LANGUAGE TESTS
@@ -28,7 +28,7 @@ const Contact = () => {
               href="/login"
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 "
             >
-              Get Started
+              login
             </Link>
           </div>
         </div>
@@ -91,7 +91,7 @@ const Contact = () => {
             href="/login"
             className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 "
           >
-            Get Started
+           Login
           </Link>
         </div>
       </div>

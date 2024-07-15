@@ -33,7 +33,7 @@ const HeaderHoren = ({
           className="flex flex-col items-center bg-red-800 p-1 ml-1"
         >
           <div className="text-white font-black text-[30px] lg:text-[35px]">
-            t-elc
+            TEST
           </div>
           <div className="text-white text-[10px] lg:text-[12px]">
             LANGUAGE TESTS

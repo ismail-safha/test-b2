@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
+import StatusLoading from "../components/StatusLoading";
 
 const sections = [
   {
@@ -133,18 +134,36 @@ export default function HomePages() {
   const [currentPage, setCurrentPage] = useState(1);
   const { data: session, status } = useSession();
 
+  //==
+
+  if (status === "loading") {
+    return <StatusLoading />;
+  }
+  //==
+
   return (
     session && (
       <main className="container w-full m-auto px-2 h-[100%]">
         <div className="   h-[109px]">
           <div className="flex flex-col items-center  bg-red-800 p-1 ">
             <div className="flex flex-col">
-              <div className="text-white font-black text-[50px]">t-elc</div>
-              <div className="text-white  text-[12px]">LNGUAGE TESTS</div>
+              <div className="text-white font-black text-[30px] lg:text-[35px]">
+                TEST
+              </div>
+              <div className="text-white text-[10px] lg:text-[12px]">
+                LANGUAGE TESTS
+              </div>
             </div>
           </div>
-          <h1 className="font-bold text-[#fff] bg-[#040404] p-[8px] text-right">
+          <h1 className="font-bold text-[#fff] bg-[#040404] p-[8px] text-center">
             Willkommen🖐 {session.user.name}
+            <span
+              className={` py-[7px] px-[13px]  ${
+                session.user.clickCount === "3" ? "bg-red-500" : "bg-[#519cdd]"
+              } text-[15px] rounded-[10px] m-[16px]`}
+            >
+              {session.user.clickCount}
+            </span>
           </h1>
         </div>
         <h1 className="text-center m-auto bg-[#080f26] text-[#fff] font-bold p-5 rounded-2xl  mt-[50px]">

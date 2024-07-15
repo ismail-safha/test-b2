@@ -64,8 +64,12 @@ export default function LoginForm() {
           href="/"
           className="flex flex-col items-center  bg-red-800 p-1 ml-1"
         >
-          <div className="text-white font-black text-[50px]">telc</div>
-          <div className="text-white  text-[12px]">LNGUAGE TESTS</div>
+          <div className="text-white font-black text-[30px] lg:text-[35px]">
+            TEST
+          </div>
+          <div className="text-white text-[10px] lg:text-[12px]">
+            LANGUAGE TESTS
+          </div>
         </Link>
       </div>
       <section className="bg-gray-50 ">
