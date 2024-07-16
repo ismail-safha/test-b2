@@ -144,7 +144,7 @@ export default function HomePages() {
   return (
     session && (
       <main className="container w-full m-auto px-2 h-[100%]">
-        <div className="   h-[109px]">
+        <div className="   h-[150px]">
           <div className="flex flex-col items-center  bg-red-800 p-1 ">
             <div className="flex flex-col">
               <div className="text-white font-black text-[30px] lg:text-[35px]">
@@ -171,9 +171,7 @@ export default function HomePages() {
             )}
           </h1>
         </div>
-        <h1 className="text-center m-auto bg-[#080f26] text-[#fff] font-bold p-5 rounded-2xl  mt-[50px]">
-          lesen und sprachbauchteine
-        </h1>
+
         {/* ===== */}
         <div className="container mx-auto py-12 px-4">
           <div className="grid grid-cols-1 gap-8">
