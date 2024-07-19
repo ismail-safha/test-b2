@@ -44,10 +44,10 @@ const Contact = () => {
               </h5>
 
               <Link
-                href="https://wa.me/212697985094"
+                href="https://wa.me/212601070802"
                 className=" items-center justify-center gap-4 px-3 flex py-2 text-sm font-medium text-center  focus:ring-4 focus:outline-none"
               >
-                <div className="underline">0697985094</div>
+                <div className="underline">0601070802</div>
 
                 <svg
                   fill="#1dc978"
@@ -91,7 +91,7 @@ const Contact = () => {
             href="/login"
             className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 "
           >
-           Login
+            Login
           </Link>
         </div>
       </div>
