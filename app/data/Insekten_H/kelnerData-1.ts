@@ -674,7 +674,7 @@ export const sprachbau_1 = {
       options: [
         {
           optionID: "A",
-          option: "abnehmen",
+          option: "neben",
         },
         {
           optionID: "B",
@@ -682,7 +682,7 @@ export const sprachbau_1 = {
         },
         {
           optionID: "C",
-          option: "nehmen",
+          option: "haben",
         },
       ],
       correctAnswerID: "B",
@@ -693,18 +693,18 @@ export const sprachbau_1 = {
       options: [
         {
           optionID: "A",
-          option: "für",
+          option: "abnehmen",
         },
         {
           optionID: "B",
-          option: "über",
+          option: "annehmen",
         },
         {
           optionID: "C",
-          option: "annehmen",
+          option: "nehmen",
         },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "B",
     },
     {
       id: 5,
@@ -750,18 +750,18 @@ export const sprachbau_1 = {
       options: [
         {
           optionID: "A",
-          option: "an",
+          option: "euch",
         },
         {
           optionID: "B",
-          option: "für",
+          option: "sich",
         },
         {
           optionID: "C",
-          option: "über",
+          option: "ihr",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "A",
     },
     {
       id: 8,
@@ -769,15 +769,15 @@ export const sprachbau_1 = {
       options: [
         {
           optionID: "A",
-          option: "demnächst",
+          option: "viel",
         },
         {
           optionID: "B",
-          option: "neulich",
+          option: "viele",
         },
         {
           optionID: "C",
-          option: "noch nicht",
+          option: "vieles",
         },
       ],
       correctAnswerID: "B",
@@ -802,7 +802,7 @@ export const sprachbau_1 = {
       correctAnswerID: "C",
     },
   ],
-  changes: "change : 24 -B: annehmen -> nebenbei & 25:  -C: um -> annehmen",
+  changes: "",
 };
 export const sprachbau_2 = {
   texts: [

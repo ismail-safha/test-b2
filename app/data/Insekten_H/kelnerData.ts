@@ -677,7 +677,7 @@ export const sprachbau_1 = {
           option: "sogar",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "C",
     },
     {
       id: 3,
@@ -696,7 +696,7 @@ export const sprachbau_1 = {
           option: "nehmen",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "C",
     },
     {
       id: 4,
@@ -753,7 +753,7 @@ export const sprachbau_1 = {
           option: "wenn auch",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "C",
     },
     {
       id: 7,
@@ -772,7 +772,7 @@ export const sprachbau_1 = {
           option: "über",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "C",
     },
     {
       id: 8,
