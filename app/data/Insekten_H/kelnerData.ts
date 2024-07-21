@@ -639,7 +639,7 @@ export const sprachbau_1 = {
           option: "welches",
         },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "B",
     },
     {
       id: 1,
@@ -658,7 +658,7 @@ export const sprachbau_1 = {
           option: "mal",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "A",
     },
     {
       id: 2,
@@ -677,7 +677,7 @@ export const sprachbau_1 = {
           option: "sogar",
         },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "B",
     },
     {
       id: 3,
@@ -696,7 +696,7 @@ export const sprachbau_1 = {
           option: "nehmen",
         },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "B",
     },
     {
       id: 4,
@@ -772,7 +772,7 @@ export const sprachbau_1 = {
           option: "über",
         },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "B",
     },
     {
       id: 8,
@@ -791,7 +791,7 @@ export const sprachbau_1 = {
           option: "noch nicht",
         },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "B",
     },
     {
       id: 9,

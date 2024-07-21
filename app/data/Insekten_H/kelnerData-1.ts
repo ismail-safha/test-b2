@@ -674,25 +674,6 @@ export const sprachbau_1 = {
       options: [
         {
           optionID: "A",
-          option: "neben",
-        },
-        {
-          optionID: "B",
-          option: "nebenbei",
-        },
-        {
-          optionID: "C",
-          option: "haben",
-        },
-      ],
-      correctAnswerID: "B",
-    },
-    {
-      id: 4,
-      questionText: "25",
-      options: [
-        {
-          optionID: "A",
           option: "abnehmen",
         },
         {
@@ -706,6 +687,26 @@ export const sprachbau_1 = {
       ],
       correctAnswerID: "B",
     },
+    {
+      id: 3,
+      questionText: "25",
+      options: [
+        {
+          optionID: "A",
+          option: "neben",
+        },
+        {
+          optionID: "B",
+          option: "nebenbei",
+        },
+        {
+          optionID: "C",
+          option: "haben",
+        },
+      ],
+      correctAnswerID: "B",
+    },
+
     {
       id: 5,
       questionText: "26",
@@ -780,7 +781,7 @@ export const sprachbau_1 = {
           option: "vieles",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "A",
     },
     {
       id: 9,
