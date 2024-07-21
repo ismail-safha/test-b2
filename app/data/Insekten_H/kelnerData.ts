@@ -639,7 +639,7 @@ export const sprachbau_1 = {
           option: "welches",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "C",
     },
     {
       id: 1,
@@ -658,7 +658,7 @@ export const sprachbau_1 = {
           option: "mal",
         },
       ],
-      correctAnswerID: "A",
+      correctAnswerID: "B",
     },
     {
       id: 2,
@@ -753,7 +753,7 @@ export const sprachbau_1 = {
           option: "wenn auch",
         },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "B",
     },
     {
       id: 7,
@@ -791,7 +791,7 @@ export const sprachbau_1 = {
           option: "noch nicht",
         },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "C",
     },
     {
       id: 9,
