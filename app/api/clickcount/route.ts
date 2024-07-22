@@ -78,13 +78,12 @@
 // }
 
 // ===========  T -2
-
 import { NextResponse } from "next/server";
 import prisma from "../../../lib/db";
 import UAParser from "ua-parser-js";
 import axios from "axios";
 
-export async function POST(req: any) {
+export async function POST(req: Request) {
   try {
     const body = await req.json();
     const { email } = body;
@@ -111,6 +110,9 @@ export async function POST(req: any) {
 
     // Fetch IP geolocation data using ipregistry
     const token = process.env.REGISTRY_API_TOKEN;
+    if (!token) {
+      return new NextResponse("REGISTRY_API_TOKEN is not set", { status: 500 });
+    }
 
     const geoResponse = await axios.get(
       `https://api.ipregistry.co/?key=${token}`
