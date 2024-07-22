@@ -24,7 +24,7 @@ export const authOptions: NextAuthOptions = {
             email: credentials.email,
           },
         });
-        if (!existingUser) {
+        if (!existingUser || existingUser.blocked) {
           return null;
         }
         // check to see if passwords match

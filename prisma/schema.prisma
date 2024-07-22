@@ -51,6 +51,7 @@ model User {
     createdAt DateTime @default(now())
     accounts      Account[]
     sessions      Session[]
+    blocked       Boolean   @default(false) // Add this line
  
 }
 
