@@ -161,12 +161,15 @@
 // };
 
 // export default CreateUser;
+//===
 
 "use client";
 
 import React, { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
+
 import StatusLoading from "@/app/components/StatusLoading";
+import { toast } from "react-toastify";
 
 interface UserDevice {
   id: string;
@@ -196,12 +199,14 @@ const CreateUser = () => {
   const [users, setUsers] = useState<User[]>([]);
   const [selectedUsers, setSelectedUsers] = useState<Set<string>>(new Set());
   const [expandedUserId, setExpandedUserId] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     fetchUsers();
   }, []);
 
   const fetchUsers = async () => {
+    setLoading(true);
     try {
       const res = await fetch("/api/getusers/");
       if (res.ok) {
@@ -213,22 +218,28 @@ const CreateUser = () => {
       }
     } catch (error) {
       setError("Something went wrong");
+    } finally {
+      setLoading(false);
     }
   };
 
   const handleDeleteUser = async (userId: string) => {
+    setLoading(true);
     try {
       const res = await fetch(`/api/deleteuser/${userId}`, {
         method: "DELETE",
       });
       if (res.ok) {
-        await fetchUsers(); // Refresh user list after deletion
+        toast.success("User deleted successfully");
+        await fetchUsers();
       } else {
         const { error } = await res.json();
         setError(error.message);
       }
     } catch (error) {
       setError("Something went wrong");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -245,6 +256,7 @@ const CreateUser = () => {
   };
 
   const handleDeleteSelectedUsers = async () => {
+    setLoading(true);
     try {
       const promises = Array.from(selectedUsers).map((userId) =>
         fetch(`/api/deleteuser/${userId}`, {
@@ -252,10 +264,13 @@ const CreateUser = () => {
         })
       );
       await Promise.all(promises);
-      await fetchUsers(); // Refresh user list after deletion
-      setSelectedUsers(new Set()); // Clear selected users
+      toast.success("Selected users deleted successfully");
+      await fetchUsers();
+      setSelectedUsers(new Set());
     } catch (error) {
       setError("Something went wrong");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -271,6 +286,7 @@ const CreateUser = () => {
   return session?.user.role === "ADMIN" ? (
     <div className="container mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold mb-6 text-gray-800">All Users</h2>
+      {loading && <p>Loading...</p>}
       <div className="overflow-x-auto">
         <table className="w-full bg-white border border-gray-300 rounded-lg shadow-md">
           <thead className="bg-gray-100 text-gray-600">
@@ -311,7 +327,10 @@ const CreateUser = () => {
                   </td>
                   <td className="p-3 border-b">
                     <button
-                      onClick={() => handleDeleteUser(user.id)}
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        handleDeleteUser(user.id);
+                      }}
                       className="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600 focus:outline-none"
                     >
                       Delete
@@ -364,6 +383,7 @@ const CreateUser = () => {
         Delete Selected Users
       </button>
       {/* {error && <p className="text-red-500 mt-4">Error: {error}</p>} */}
+      {/* <toast.Container /> */}
     </div>
   ) : (
     "You are not admin"
