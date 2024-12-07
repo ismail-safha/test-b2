@@ -44,7 +44,7 @@ const Contact = () => {
               </h5>
 
               <Link
-                href="https://wa.me/212601070802"
+                href="https://wa.me/212652233163"
                 className=" items-center justify-center gap-4 px-3 flex py-2 text-sm font-medium text-center  focus:ring-4 focus:outline-none"
               >
                 <div className="underline">0652233163</div>
