@@ -130,6 +130,12 @@ const sections = [
     mainColor: "#195c2188",
     color: "#01204E",
   },
+  {
+    title: "#batata 13",
+    links: [{ href: "/contact", text: "1-batata", locked: true }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
 ];
 
 const LockIcon = () => (
