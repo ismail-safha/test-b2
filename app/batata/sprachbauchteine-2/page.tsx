@@ -21,35 +21,35 @@ const shuffleArray = (array: any[]) => {
 
 const sprachbau_2_t = {
   answers: [
-    { id: 1, number: "A", text: "ALLEIN" },
-    { id: 2, number: "B", text: "AN" },
-    { id: 3, number: "C", text: "AUF" },
-    { id: 4, number: "D", text: "AUFGRUND" },
-    { id: 5, number: "E", text: "DARAUF" },
-    { id: 6, number: "F", text: "DURCH" },
-    { id: 7, number: "G", text: "DÜRFTEN" },
-    { id: 8, number: "H", text: "EINZIGE" },
-    { id: 9, number: "I", text: "KNAPP" },
-    { id: 10, number: "J", text: "KURZ" },
-    { id: 11, number: "K", text: "MÖCHTEN" },
-    { id: 12, number: "L", text: "REGE" },
-    { id: 13, number: "M", text: "STATTDESSEN" },
-    { id: 14, number: "N", text: "WÄHREND" },
-    { id: 15, number: "O", text: "WEGEN" },
+    { id: 1, number: "A", text: "ALLES" },
+    { id: 2, number: "B", text: "ANSTATT" },
+    { id: 3, number: "C", text: "AUSGEHEN" },
+    { id: 4, number: "D", text: "BEKOMMEN" },
+    { id: 5, number: "E", text: "BILDEN" },
+    { id: 6, number: "F", text: "DAGEGEN" },
+    { id: 7, number: "G", text: "DAVON" },
+    { id: 8, number: "H", text: "GEGEN" },
+    { id: 9, number: "I", text: "HÖCHSTENS" },
+    { id: 10, number: "J", text: "JEDE" },
+    { id: 11, number: "K", text: "MEISTENS" },
+    { id: 12, number: "L", text: "SOLCHE" },
+    { id: 13, number: "M", text: "UM" },
+    { id: 14, number: "N", text: "WILL" },
+    { id: 15, number: "O", text: "WUNSCHT" },
   ],
 };
 
 const initialCartItems: Text[] = [
-  { title: "input1", text: "", anserText: "REGE" }, // L
-  { title: "input2", text: "", anserText: "AN" }, // B
-  { title: "input3", text: "", anserText: "ALLEIN" }, // A
-  { title: "input4", text: "", anserText: "DARAUF" }, // E
-  { title: "input5", text: "", anserText: "DÜRFTEN" }, // G
-  { title: "input6", text: "", anserText: "AUF" }, // C
-  { title: "input7", text: "", anserText: "STATTDESSEN" }, // M
-  { title: "input8", text: "", anserText: "KURZ" }, // J
-  { title: "input9", text: "", anserText: "AUFGRUND" }, // D
-  { title: "input10", text: "", anserText: "DURCH" }, // F
+  { title: "input1", text: "", anserText: "ANSTATT" }, // B
+  { title: "input2", text: "", anserText: "JEDE" }, // J
+  { title: "input3", text: "", anserText: "GEGEN" }, // H
+  { title: "input4", text: "", anserText: "DAVON" }, // G
+  { title: "input5", text: "", anserText: "WILL" }, // N
+  { title: "input6", text: "", anserText: "BILDEN" }, // E
+  { title: "input7", text: "", anserText: "AUSGEHEN" }, // C
+  { title: "input8", text: "", anserText: "SOLCHE" }, // L
+  { title: "input9", text: "", anserText: "BEKOMMEN" }, // D
+  { title: "input10", text: "", anserText: "MEISTENS" }, // K
 ];
 
 const Sprachbauchteine_2: React.FC = () => {
@@ -131,9 +131,13 @@ const Sprachbauchteine_2: React.FC = () => {
                 Lösungen auf dem Antwortbogen bei den Aufgaben 21 - 30
               </p>
               <div className="mt-[30px] dark:bg-[#1d2a35] dark:text-[#ededed] bg-[#fbfbfb] rounded-lg lg:overflow-y-scroll h-fit  lg:h-[500px] p-4">
-                <h1 className="text-xl font-bold">Senioren</h1>
+                <h1 className="text-xl font-bold">
+                  Schwarzarbeit kann teuer werden
+                </h1>
                 <p>
-                  Senioren sind heute hochst
+                  Schnäppchen machen, um Rabatte feilschen: Wer billig einkauft,
+                  gilt als clever. Vorsicht ist jedoch bei Aufträgen an
+                  Schwarzarbeiter geboten. Denn schnell zahlt der Kunde drauf,{" "}
                   <input
                     type="text"
                     placeholder="____31"
@@ -148,10 +152,8 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(0)}
                     readOnly
                   />{" "}
-                  , aktiv und nutzen vielfach die Chance, sich der so genannten
-                  dritten Lebensphase Wünsche oder Träume zu erfüllen. Dazu
-                  gehören oft Weiterbildung oder in der Jugend verpasste
-                  Bildung. Die Folge: Das Seniorenstudium, wie es
+                  – wie durch das illegale Arbeitsverhältnis erhofft – Geld zu
+                  sparen. Rund ums Haus ist nicht{" "}
                   <input
                     type="text"
                     placeholder="____32"
@@ -166,8 +168,9 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(1)}
                     readOnly
                   />{" "}
-                  verschiedenen deutschen Universitäten angeboten wird, erfreut
-                  sich zunehmender Beliebtheit.
+                  Gelegenheit so günstig, wie sie anfangs scheint: Schwarzarbeit
+                  etwa ist nicht nur verboten, sondern es gibt auch ein
+                  finanzielles Argument{" "}
                   <input
                     type="text"
                     placeholder="____33"
@@ -182,11 +185,8 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(2)}
                     readOnly
                   />{" "}
-                  in Trier waren im vergangenen Sommersemester über 130 Personen
-                  der Altersgruppe 50+ als Gasthörer eingeschrieben und nahmen
-                  am regulären Lehrbetrieb teil. Besonders gefragt waren
-                  allgemeinbildende Veranstaltungen aus den Fächer Geschichte,
-                  Kunstgeschichte und Politik.
+                  illegale Arbeiter: Oftmals rechnet sich der Dienst gegen
+                  Barzahlung gar nicht. "Abgesehen{" "}
                   <input
                     type="text"
                     placeholder="____34"
@@ -201,14 +201,14 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(3)}
                     readOnly
                   />{" "}
-                  folgten die neueren Sprach- und Literaturwissenschaften sowie
-                  Themen aus Philosophie, Psychologie und Pädagogik. Angebote
-                  aus den Sozial-, Wirtschafts-, Geo- und Rechtswissenschaften
-                  wurden dagegen weniger häufig gewählt. Hier finde ich
-                  insbesondere solche Seniorenstudierende wieder, die gezielt an
-                  der Vertiefung ihres fachspezifischen Wissens arbeiten. Der
-                  größte Teil der studierenden Senioren besteht übrigens aus
-                  Frauen. Die Gründe dafür
+                  , dass es strafbar ist, Schwarzarbeiter zu beschäftigen, nimmt
+                  der Auftraggeber handfeste steuerliche Nachteile in Kauf",
+                  warnt Dirk Witte, Steuerberater aus Wildeshausen in
+                  Niedersachsen. Wer eine Putzhilfe beschäftigt, kann die
+                  Steuerlast auch auf legalem Weg spürbar senken. Auch für die
+                  Modernisierung, Renovierung und Sanierung der Wohnung gibt es
+                  einen Steuernachlass, allerdings nur für legale Arbeiten. "Das
+                  Finanzamt{" "}
                   <input
                     type="text"
                     placeholder="____35"
@@ -223,7 +223,11 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(4)}
                     readOnly
                   />{" "}
-                  sein, dass Frauen in ihren jüngeren Lebensjahren häufig
+                  eine ordentliche Rechnung und einen Überweisungsbeleg sehen".
+                  Barzahler können daher nichts von der Steuer absetzen. Noch
+                  schwerer fällt ins Gewicht, dass ein Kunde seine
+                  Haftungsansprüche aufs Spiel setzt, wenn er vordergründig ein
+                  paar Euro sparen möchte. Denn mängelfreie Bauten{" "}
                   <input
                     type="text"
                     placeholder="____36"
@@ -238,7 +242,11 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(5)}
                     readOnly
                   />{" "}
-                  einen berufliche Karriere verzichteten.
+                  eher die Ausnahme. Und ob ein Kunde die Beseitigung von
+                  Mängeln gerichtlich gegen einen Schwarzarbeiter durchsetzen
+                  kann, ist von Fall zu Fall zu prüfen. Im Prinzip muss man aber
+                  damit rechnen, die Ansprüche zu verlieren. Ebenso dürften
+                  Verbraucher leer{" "}
                   <input
                     type="text"
                     placeholder="____37"
@@ -253,10 +261,8 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(6)}
                     readOnly
                   />{" "}
-                  setzten sie sich für die Familie und insbesondere für ihre
-                  Kinder ein. Nun sind die Kinder erwachsen und aus dem Haus,
-                  die Frauen verspüren den Wunsch, ihre geistigen Fähigkeiten,
-                  deren Einsatz in den Familienjahren häufig zu
+                  , wenn beim Bauen etwas zu Bruch geht. Ein ordentlicher
+                  Handwerker hat für{" "}
                   <input
                     type="text"
                     placeholder="____38"
@@ -271,11 +277,14 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(7)}
                     readOnly
                   />{" "}
-                  gekommen war, wieder zu trainieren und zu erweitern. Männern
-                  hingegen konnten häufiger während ihres Arbeitslebens ihre
-                  Karriere verwirklichen, sich weiterbilden ihr Wissen in
-                  gesellschaftlich angesehen Weise an den Mann (weniger an die
-                  Frau) bringen.
+                  Fälle eine Haftpflichtversicherung. Richtig teuer werden
+                  können auch Unfälle, bei denen sich der illegale Helfer
+                  verletzt. Dann zahlen weder Krankenversicherung noch
+                  Unfallkasse. Fällt etwa ein Arbeiter vom Gerüst und ist danach
+                  dauerhaft querschnittsgelähmt, dann wird der Kunde dafür sein
+                  Leben lang zahlen. Die Folgen von Schwarzarbeit lassen sich
+                  mit dem Dominoprinzip beschreiben: Fliegt die illegale
+                  Beschäftigung auf, dann{" "}
                   <input
                     type="text"
                     placeholder="____39"
@@ -290,11 +299,9 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(8)}
                     readOnly
                   />{" "}
-                  dessen sehen sie keine Veranlassung ihren Lebensabend an einer
-                  Weiterbildungsinstition oder gar an einer Universität zu
-                  verbringen. Lernen ist kein Privileg der Jugend! Vielmehr
-                  besteht gerade in Bezug auf das Bildungsangebot für ältere
-                  Menschen ein nesiger Bedarf. Er wird gespeist
+                  es gleich mehrere Behörden mit. Post gibt es dann vom
+                  Finanzamt, der Staatsanwaltschaft und den
+                  Sozialversicherungsträgern. Dann braucht der Auftraggeber{" "}
                   <input
                     type="text"
                     placeholder="____40"
@@ -309,14 +316,7 @@ const Sprachbauchteine_2: React.FC = () => {
                     onClick={() => handleInputClick(9)}
                     readOnly
                   />{" "}
-                  die Vitalität und die hohe Bildungsmotivation der heutigen
-                  Alten. Mit der wachsenden Fitness der Generation 50+ wächst
-                  auch das Interesse, neues Wissen zu erwerben, neue Kompetenzen
-                  zu entwickeln und bisher eventuell vernachlässigte Ressourcen
-                  zu aktivieren, Gleichzeitig tragen Bildungsaktivitäten
-                  wesentlich dazu bei, dass immer mehr Menschen ihre kognitive
-                  Leistungsfähigkeit und psychische Gesundheit bis ins hohe
-                  Alter erhalten können.
+                  einen Anwalt. Und der kostet natürlich auch wieder Geld.
                 </p>
               </div>
             </div>

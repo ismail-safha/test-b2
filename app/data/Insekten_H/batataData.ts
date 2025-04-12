@@ -423,33 +423,16 @@ Räuchermänner. Schwibbögen, Töpferwaren und Herrenhuter Adventssterne werden
 export const sprachbau_1 = {
   texts: [
     {
-      title: "Liebe Vanessa,",
+      title: "Liebe Corinna,",
       text: `
-      danke für deinen Brief, ____21_____ ich mich total gefreut habe. Du fragst dich bestimmt, warum
-      du schon drei Wochen ____22_____ von mir gehört hast, oder? Ich war mit meiner Gastfamilie in
-      Urlaub. Vierzehn Tage im Allgäu - mit den Kindern Stefan, Anja und Karina. Du weißt ____23_____
-      selbst, wie anstrengend es ist, wenn man ständig drei kleine Kinder um sich hat, die pausenlos
-      unterhalten werden möchten. ____24_____ ist es übrigens in deiner Au-pair-Familie mit der
-      kleinen Dorothea?
-      Das Allgäu liegt in Süddeutschland am Fuß ____25_____ Alpen. Wir sind fast jeden Tag gewandert,
-      immer bergauf und bergab. Den Kindern und mir haben ständig die Füße weh ____26_____ , doch
-      meine Gasteltern, Herr und Frau Zimmer, sind einfach immer weitergelaufen. Die Deutschen
-      lieben es nämlich, in der Natur spazieren zu gehen, bis sie vor Erschöpfung _____27____ .
-      Unterwegs haben wir manchmal an einer sogenannten “Wassertretstelle” Rast gemacht. Das sind
-      kleine Wasserbecken, die oft mitten im Wald liegen. Durch das Becken fließt ein Bach mit
-      eiskaltem Wasser, das direkt von den Bergen kommt. Stell _____28____ vor, alle Wanderer ziehen
-      ihre Schuhe und Strümpfe aus und laufen durch dieses Becken. Als ich meinen Fuß in dieses kalte
-      Wasser getaucht hatte, dachte ich, dass ich gleich sterben muss.
-      Am Wochenende haben wir alle Minigolf gespielt. Dabei muss ein Golfball mit einem Schläger in
-      ein etwa Zehn Meter entferntes Loch geschlagen werden. Aber vor dem Loch gibt es ____29_____
-      Menge Hindernisse: Gräben, kleine Hügel, Tunnel. Der Spieler, dessen Ball mit den wenigsten
-      Schlägen im Loch ankommt, hat gewonnen. Die Kinder wollten gar nicht mehr ____30_____
-      aufhören.
-      Jetzt muss ich aber Schluss machen, die Kinder warten auf ihr Abendessen, denn die Zimmers
-      sind heute nicht da: Sie wandern mal wieder.
-      Viele Grüße
-      deine Mercedes
-      
+      es tut mir wirklich Leid, ____21. ich dir seit Ewigkeiten nicht mehr geschrieben habe. Aber du weißt ja: Ich habe seit drei Monaten eine neue Arbeit. Und da hatte ich gar keine Zeit, mich mit etwas Anderem zu ____22. als mit der neuen Arbeit.
+Es hat mich wirklich überrascht, wie schnell ich nach dem Abschluss meiner Ausbildung etwas gefunden habe. Dabei haben alle immer nur gesagt: "Gärtner? Die gibt es ____23. wie Sand am Meer, wie willst du da so schnell einen Job finden?".
+Ich arbeite jetzt in einer Baumschule. Wir kultivieren und verkaufen Obstbäume, ____24. an die Obstbauern der näheren Umgebung. Die Arbeit macht mir großen Spaß, es ist andererseits aber ein bisschen anstrengend, acht Stunden am Tag körperlich – ____25. im Freien – zu arbeiten. Und leider ____26. ich fast eine dreiviertel Stunde mit dem Zug fahren, um an meinen Arbeitsplatz zu kommen.
+Wenn ich dann am Abend nach Hause komme, bin ich so müde, dass ich eigentlich nur noch fernsehen oder Musik hören kann. Ich habe im Moment nur ____27. Lust, etwas zu unternehmen, aber ich bin mir sicher: Sie ____28. wieder.
+Wie geht es dir denn? Du müsstest doch jetzt auch bald mit deiner Ausbildung fertig sein, oder?
+Hast du schon damit angefangen, dich bei verschiedenen Arbeitgebern zu bewerben? Oder ____29. du dir noch ein bisschen Zeit damit? Ich würde dir in jedem Fall raten: Fang so früh wie ____30. mit den Bewerbungen an, je früher, desto besser. Du weißt ja, was unser Klassenlehrer in der Realschule immer gesagt hat: Gut Ding will Weile haben.
+So, jetzt muss ich aufhören und ins Bett gehen, damit ich morgen wieder fit bin.
+Mach’s gut, bis bald 
       `,
     },
   ],
@@ -458,113 +441,59 @@ export const sprachbau_1 = {
       id: 0,
       questionText: "21",
       options: [
-        {
-          optionID: "A",
-          option: "an den",
-        },
-        {
-          optionID: "B",
-          option: "auf dem",
-        },
-        {
-          optionID: "C",
-          option: "über den",
-        },
+        { optionID: "A", option: "dass" },
+        { optionID: "B", option: "ob" },
+        { optionID: "C", option: "weil" },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "A",
     },
     {
       id: 1,
       questionText: "22",
       options: [
-        {
-          optionID: "A",
-          option: "nichts mehr",
-        },
-        {
-          optionID: "B",
-          option: "noch nicht",
-        },
-        {
-          optionID: "C",
-          option: "keines",
-        },
+        { optionID: "A", option: "bedienen" },
+        { optionID: "B", option: "beeilen" },
+        { optionID: "C", option: "beschäftigen" },
       ],
-      correctAnswerID: "A",
+      correctAnswerID: "C",
     },
     {
       id: 2,
       questionText: "23",
       options: [
-        {
-          optionID: "A",
-          option: "doch",
-        },
-        {
-          optionID: "B",
-          option: "eben",
-        },
-        {
-          optionID: "C",
-          option: "überhaupt",
-        },
+        { optionID: "A", option: "bloß" },
+        { optionID: "B", option: "doch" },
+        { optionID: "C", option: "nur" },
       ],
-      correctAnswerID: "A",
+      correctAnswerID: "B",
     },
     {
       id: 3,
       questionText: "24",
       options: [
-        {
-          optionID: "A",
-          option: "Wann",
-        },
-        {
-          optionID: "B",
-          option: "Was",
-        },
-        {
-          optionID: "C",
-          option: "Wie",
-        },
+        { optionID: "A", option: "außerdem" },
+        { optionID: "B", option: "insbesondere" },
+        { optionID: "C", option: "jedoch" },
       ],
-      correctAnswerID: "C",
+      correctAnswerID: "B",
     },
     {
       id: 4,
       questionText: "25",
       options: [
-        {
-          optionID: "A",
-          option: "der",
-        },
-        {
-          optionID: "B",
-          option: "die",
-        },
-        {
-          optionID: "C",
-          option: "von",
-        },
+        { optionID: "A", option: "übermächtig" },
+        { optionID: "B", option: "übermäßig" },
+        { optionID: "C", option: "überwiegend" },
       ],
-      correctAnswerID: "A",
+      correctAnswerID: "C",
     },
     {
       id: 5,
       questionText: "26",
       options: [
-        {
-          optionID: "A",
-          option: "gelaufen",
-        },
-        {
-          optionID: "B",
-          option: "getan",
-        },
-        {
-          optionID: "C",
-          option: "geworden",
-        },
+        { optionID: "A", option: "darf" },
+        { optionID: "B", option: "muss" },
+        { optionID: "C", option: "soll" },
       ],
       correctAnswerID: "B",
     },
@@ -572,56 +501,29 @@ export const sprachbau_1 = {
       id: 6,
       questionText: "27",
       options: [
-        {
-          optionID: "A",
-          option: "durchfallen",
-        },
-        {
-          optionID: "B",
-          option: "umfallen",
-        },
-        {
-          optionID: "C",
-          option: "wegfallen",
-        },
+        { optionID: "A", option: "gering" },
+        { optionID: "B", option: "knapp" },
+        { optionID: "C", option: "wenig" },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "C",
     },
     {
       id: 7,
       questionText: "28",
       options: [
-        {
-          optionID: "A",
-          option: "dich",
-        },
-        {
-          optionID: "B",
-          option: "dir",
-        },
-        {
-          optionID: "C",
-          option: "mal",
-        },
+        { optionID: "A", option: "kommt" },
+        { optionID: "B", option: "läuft" },
+        { optionID: "C", option: "steht" },
       ],
-      correctAnswerID: "B",
+      correctAnswerID: "A",
     },
     {
       id: 8,
       questionText: "29",
       options: [
-        {
-          optionID: "A",
-          option: "alle",
-        },
-        {
-          optionID: "B",
-          option: "ganze",
-        },
-        {
-          optionID: "C",
-          option: "jede",
-        },
+        { optionID: "A", option: "brauchst" },
+        { optionID: "B", option: "hast" },
+        { optionID: "C", option: "lässt" },
       ],
       correctAnswerID: "C",
     },
@@ -629,18 +531,9 @@ export const sprachbau_1 = {
       id: 9,
       questionText: "30",
       options: [
-        {
-          optionID: "A",
-          option: "dabei",
-        },
-        {
-          optionID: "B",
-          option: "damit",
-        },
-        {
-          optionID: "C",
-          option: "davon",
-        },
+        { optionID: "A", option: "kürzlich" },
+        { optionID: "B", option: "möglich" },
+        { optionID: "C", option: "üblich" },
       ],
       correctAnswerID: "B",
     },
