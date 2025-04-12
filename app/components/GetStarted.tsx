@@ -136,6 +136,12 @@ const sections = [
     mainColor: "#195c2188",
     color: "#01204E",
   },
+  {
+    title: "#batata 14",
+    links: [{ href: "/contact", text: "1-Nahal", locked: true }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
 ];
 
 const LockIcon = () => (

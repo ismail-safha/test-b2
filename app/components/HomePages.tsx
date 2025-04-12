@@ -133,6 +133,12 @@ const sections = [
     mainColor: "#195c2188",
     color: "#01204E",
   },
+  {
+    title: "#Nahal 14",
+    links: [{ href: "/nahal", text: "1-Nahal" }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
 ];
 
 // export default async function Home() {
