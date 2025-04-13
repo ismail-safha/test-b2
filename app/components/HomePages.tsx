@@ -139,6 +139,12 @@ const sections = [
     mainColor: "#195c2188",
     color: "#01204E",
   },
+  {
+    title: "#Alpen  15",
+    links: [{ href: "/alpen", text: "1-Alpen " }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
 ];
 
 // export default async function Home() {

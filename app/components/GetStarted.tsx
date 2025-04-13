@@ -142,6 +142,12 @@ const sections = [
     mainColor: "#195c2188",
     color: "#01204E",
   },
+  {
+    title: "#Alpen 15",
+    links: [{ href: "/contact", text: "1-Alpen", locked: true }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
 ];
 
 const LockIcon = () => (
