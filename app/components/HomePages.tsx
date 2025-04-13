@@ -141,7 +141,7 @@ const sections = [
   },
   {
     title: "#Alpen  15",
-    links: [{ href: "/alpen", text: "1-Alpen " }],
+    links: [{ href: "/alpan", text: "1-Alpen " }],
     mainColor: "#195c2188",
     color: "#01204E",
   },
