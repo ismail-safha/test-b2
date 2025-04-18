@@ -166,6 +166,18 @@ const sections = [
     mainColor: "#195c2188",
     color: "#01204E",
   },
+  {
+    title: "#bonbons 19",
+    links: [{ href: "/contact", text: "1-bonbons", locked: true }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
+  {
+    title: "#grippe 20",
+    links: [{ href: "/contact", text: "1-grippe", locked: true }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
 ];
 
 const LockIcon = () => (

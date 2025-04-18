@@ -163,6 +163,18 @@ const sections = [
     mainColor: "#195c2188",
     color: "#01204E",
   },
+  {
+    title: "#bonbons  19",
+    links: [{ href: "/bonbons", text: "1-bonbons " }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
+  {
+    title: "#grippe  20",
+    links: [{ href: "/grippe", text: "1-grippe " }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
 ];
 
 // export default async function Home() {
