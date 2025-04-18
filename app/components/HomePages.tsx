@@ -145,6 +145,24 @@ const sections = [
     mainColor: "#195c2188",
     color: "#01204E",
   },
+  {
+    title: "#Lichts  16",
+    links: [{ href: "/lichts", text: "1-Lichts " }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
+  {
+    title: "#trampoline  17",
+    links: [{ href: "/trampoline", text: "1-trampoline " }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
+  {
+    title: "#kaffee  18",
+    links: [{ href: "/kaffee", text: "1-kaffee " }],
+    mainColor: "#195c2188",
+    color: "#01204E",
+  },
 ];
 
 // export default async function Home() {
